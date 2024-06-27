@@ -1,0 +1,56 @@
+1.11
+-----
+- Drop python 3.6 and python 3.7 support, add python 3.12 support
+
+1.10.4
+-----
+- Add "--max-concurrent" flag for uploading endpoint scans
+- bump khulnasoft-SDK to 1.19.13
+
+1.10.3
+-----
+- Print scan directory names as they are uploaded in batch
+
+1.10.2
+-----
+- Upgrade khulnasoft-SDK to 1.19.10
+
+1.10.1
+-----
+- Add command for sending phishing emails from a directory to Khulnasoft Analyze
+- Upgrade khulnasoft-SDK to 1.19.9
+
+1.9.3
+-----
+- Improve commands results messages
+- Upgrade khulnasoft-SDK to 1.19.7
+
+1.9.2
+-----
+- Pin sdk to 1.15.2
+
+1.9.1
+-----
+- Move the log file to the current working directory
+
+1.9
+-----
+- Support for uploading offline endpoint scans
+
+1.8.1
+-----
+- Disable hidden files check on  MingW
+
+1.8
+-----
+ - Bump to click 7.1.2
+ - Add index_by_list command to index list of hashes given a text file
+
+1.7.4
+------
+added `--ignore-directory-count-limit` flag to ignore directory item count limit
+
+1.7
+------
+ - Add option to pass code item type
+ - Support python 3.8

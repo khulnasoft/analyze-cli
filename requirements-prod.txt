@@ -1,0 +1,2 @@
+click==7.1.2
+khulnasoft-sdk==1.19.13
