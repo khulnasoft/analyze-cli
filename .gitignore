@@ -16,3 +16,5 @@ mb1.log
 .tox
 *.egg-info/
 *.log
+build/
+dist/

@@ -7,7 +7,7 @@ from unittest.mock import patch
 
 import requests
 from click.testing import CliRunner
-from khulnasoft_sdk import errors as sdk_errors
+from khulnasoft_analyze_sdk import errors as sdk_errors
 
 import khulnasoft_analyze_cli.key_store as key_store
 from khulnasoft_analyze_cli import cli

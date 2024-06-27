@@ -74,7 +74,7 @@ def init_log(logger_name, debug_mode=False):
     handler.setFormatter(formatter)
     handler.setLevel(logging.DEBUG)
     cli_logger.addHandler(handler)
-    sdk_logger = logging.getLogger('khulnasoft_sdk')
+    sdk_logger = logging.getLogger('khulnasoft_analyze_sdk')
     sdk_logger.setLevel(logging.INFO)
     sdk_logger.addHandler(handler)
 

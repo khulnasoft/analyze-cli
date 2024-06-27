@@ -8,8 +8,8 @@ from unittest.mock import MagicMock
 from unittest.mock import patch
 
 import click.exceptions
-import khulnasoft_sdk.endpoint_analysis
-import khulnasoft_sdk.base_analysis
+import khulnasoft_analyze_sdk.endpoint_analysis
+import khulnasoft_analyze_sdk.base_analysis
 import khulnasoft_analyze_cli.key_store as key_store
 from khulnasoft_analyze_cli import commands
 from khulnasoft_analyze_cli.cli import create_global_api
@@ -26,7 +26,7 @@ class CommandsAnalyzeSpec(CliSpec):
 
         key_store.get_stored_api_key = MagicMock(return_value='api_key')
 
-        send_analyze_patcher = patch('khulnasoft_sdk.analysis.FileAnalysis.send')
+        send_analyze_patcher = patch('khulnasoft_analyze_sdk.analysis.FileAnalysis.send')
         self.send_analyze_mock = send_analyze_patcher.start()
         self.addCleanup(send_analyze_patcher.stop)
 
@@ -87,11 +87,11 @@ class CommandEndpointAnalysisSpec(CliSpec):
 
         key_store.get_stored_api_key = MagicMock(return_value='api_key')
 
-        send_analyze_patcher = patch('khulnasoft_sdk.endpoint_analysis.EndpointAnalysis.send')
+        send_analyze_patcher = patch('khulnasoft_analyze_sdk.endpoint_analysis.EndpointAnalysis.send')
         self.send_analyze_mock = send_analyze_patcher.start()
         self.addCleanup(send_analyze_patcher.stop)
 
-        analysis_id_patcher  = patch('khulnasoft_sdk.endpoint_analysis.EndpointAnalysis.analysis_id', create=True, new_callable=unittest.mock.PropertyMock, return_value=str(uuid.uuid4()))
+        analysis_id_patcher  = patch('khulnasoft_analyze_sdk.endpoint_analysis.EndpointAnalysis.analysis_id', create=True, new_callable=unittest.mock.PropertyMock, return_value=str(uuid.uuid4()))
         self.analysis_id_mock = analysis_id_patcher.start()
         self.addCleanup(analysis_id_patcher.stop)
 
@@ -208,7 +208,7 @@ class CommandUploadPhishingSpec(CliSpec):
 
         key_store.get_stored_api_key = MagicMock(return_value='api_key')
 
-        send_phishing_patcher = patch('khulnasoft_sdk.alerts.Alert.send_phishing_email')
+        send_phishing_patcher = patch('khulnasoft_analyze_sdk.alerts.Alert.send_phishing_email')
         self.send_phishing_mock = send_phishing_patcher.start()
         self.addCleanup(send_phishing_patcher.stop)
 

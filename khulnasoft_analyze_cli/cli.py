@@ -2,10 +2,10 @@ import logging
 import os
 
 import click
-from khulnasoft_sdk import api
-from khulnasoft_sdk import consts as sdk_consts
-from khulnasoft_sdk import errors as sdk_errors
-from khulnasoft_sdk.consts import CodeItemType
+from khulnasoft_analyze_sdk import api
+from khulnasoft_analyze_sdk import consts as sdk_consts
+from khulnasoft_analyze_sdk import errors as sdk_errors
+from khulnasoft_analyze_sdk.consts import CodeItemType
 
 from khulnasoft_analyze_cli import __version__
 from khulnasoft_analyze_cli import commands

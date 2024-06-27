@@ -19,7 +19,7 @@ with open(rel('khulnasoft_analyze_cli', '__init__.py'), 'r') as f:
 
 install_requires = [
     'click==7.1.2',
-    'khulnasoft-sdk>=1.15.2,<2'
+    'khulnasoft-analyze-sdk>=1.15.2,<2'
 ]
 tests_require = [
     'pytest==6.1.2',

@@ -5,13 +5,13 @@ from typing import Optional
 from email.utils import parsedate_to_datetime
 
 import click
-from khulnasoft_sdk import api
-from khulnasoft_sdk import consts as sdk_consts
-from khulnasoft_sdk import errors as sdk_errors
-from khulnasoft_sdk.alerts import Alert
-from khulnasoft_sdk.analysis import FileAnalysis
-from khulnasoft_sdk.endpoint_analysis import EndpointAnalysis
-from khulnasoft_sdk.index import Index
+from khulnasoft_analyze_sdk import api
+from khulnasoft_analyze_sdk import consts as sdk_consts
+from khulnasoft_analyze_sdk import errors as sdk_errors
+from khulnasoft_analyze_sdk.alerts import Alert
+from khulnasoft_analyze_sdk.analysis import FileAnalysis
+from khulnasoft_analyze_sdk.endpoint_analysis import EndpointAnalysis
+from khulnasoft_analyze_sdk.index import Index
 
 from khulnasoft_analyze_cli import key_store
 from khulnasoft_analyze_cli import utilities

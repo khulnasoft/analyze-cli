@@ -5,7 +5,7 @@
 1.10.4
 -----
 - Add "--max-concurrent" flag for uploading endpoint scans
-- bump khulnasoft-SDK to 1.19.13
+- bump khulnasoft-analyze-SDK to 1.19.13
 
 1.10.3
 -----
@@ -13,17 +13,17 @@
 
 1.10.2
 -----
-- Upgrade khulnasoft-SDK to 1.19.10
+- Upgrade khulnasoft-analyze-SDK to 1.19.10
 
 1.10.1
 -----
 - Add command for sending phishing emails from a directory to Khulnasoft Analyze
-- Upgrade khulnasoft-SDK to 1.19.9
+- Upgrade khulnasoft-analyze-SDK to 1.19.9
 
 1.9.3
 -----
 - Improve commands results messages
-- Upgrade khulnasoft-SDK to 1.19.7
+- Upgrade khulnasoft-analyze-SDK to 1.19.7
 
 1.9.2
 -----
